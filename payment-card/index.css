@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-color: hsl(225, 100%, 94%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 1px 21px 34px -13px rgba(125, 125, 125, 0.45);
+  -webkit-box-shadow: 1px 21px 34px -13px rgba(125, 125, 125, 0.45);
+  -moz-box-shadow: 1px 21px 34px -13px rgba(125, 125, 125, 0.45);
+  height: 80vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+  .card {
+    height: 100vh;
+  }
+}
+
+.card {
+  width: 300px;
+  height: 70vh;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: -1px 22px 19px -14px rgba(125, 125, 125, 0.45);
+  -webkit-box-shadow: -1px 22px 19px -14px rgba(125, 125, 125, 0.45);
+  -moz-box-shadow: -1px 22px 19px -14px rgba(125, 125, 125, 0.45);
+}
+
+.card-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.card-detail-block {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-heading {
+  margin-bottom: 20px;
+}
+
+.card-summary {
+  font-size: 11px;
+  color: rgb(48, 45, 45);
+  margin-bottom: 30px;
+}
+
+.price-block {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 40px 10px;
+}
+
+.price-block img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.price-block div {
+  margin-left: -60px;
+  line-height: 1.1;
+}
+.price-block div p {
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+
+.price-block div span {
+  font-size: 11px;
+  color: rgb(92, 92, 92);
+}
+
+.price-block a {
+  font-size: 11px;
+  align-self: center;
+  margin-right: 20px;
+  transition: 0.2s;
+}
+
+.price-block a:hover {
+  text-decoration: none;
+  color: hsl(276, 23%, 49%);
+}
+
+.payment-button {
+  margin: 0 auto;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 70px;
+  font-size: 11px;
+  transition: 0.2s;
+  box-shadow: 3px 19px 34px -20px rgba(140, 140, 140, 0.75);
+  -webkit-box-shadow: 3px 19px 34px -20px rgba(140, 140, 140, 0.75);
+  -moz-box-shadow: 3px 19px 34px -20px rgba(140, 140, 140, 0.75);
+}
+
+.payment-button:hover {
+  cursor: pointer;
+  background-color: hsl(276, 23%, 49%);
+}
+
+.cancel-button {
+  position: relative;
+  top: 20px;
+  font-size: 11px;
+  text-decoration: none;
+  color: rgb(92, 92, 92);
+  transition: 0.2s;
+}
+
+.cancel-button:hover {
+  color: rgb(0, 0, 0);
+}
