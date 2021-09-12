@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.card {
+  width: 50%;
+  height: 290px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.card-content {
+  width: 50%;
+  background-color: hsl(244, 38%, 16%);
+  padding: 45px;
+}
+
+.card-content h1 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 10px;
+}
+
+.card-content h1 span {
+  color: hsl(277, 64%, 61%);
+}
+
+.card-content p {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.card-content div {
+  display: inline-block;
+  color: white;
+  line-height: 0;
+}
+
+.detail-1,
+.detail-2 {
+  margin-right: 40px;
+}
+
+.detail-1 p,
+.detail-2 p,
+.detail-3 p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.detail-1 span,
+.detail-2 span,
+.detail-3 span {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.card-image {
+  width: 50%;
+  background-image: url(./images/image-header-desktop.jpg);
+  background-size: cover;
+  display: flex;
+}
+
+.mobile-image {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.card-image::before {
+  content: "";
+  background-color: hsl(277, 55%, 41%);
+  opacity: 0.5;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 350px;
+    height: 600px;
+    display: block;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+
+  .card-content {
+    width: 100%;
+  }
+}
